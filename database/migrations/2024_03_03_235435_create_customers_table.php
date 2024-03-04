@@ -15,10 +15,6 @@ return new class extends Migration {
             $table->string('name');
             $table->string('cpf')->unique();
         });
-
-        Schema::table('sales', function (Blueprint $table) {
-            $table->foreignId('customer_id')->constrained()->onDelete('cascade');
-        });
     }
 
     /**

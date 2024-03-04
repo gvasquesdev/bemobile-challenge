@@ -11,4 +11,5 @@ class Product extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = ['name', 'description', 'price'];
+    public $timestamps = false;
 }

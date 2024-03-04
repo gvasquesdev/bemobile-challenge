@@ -10,6 +10,7 @@ class Customer extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'cpf'];
+    public $timestamps = false;
 
     public function sales()
     {
